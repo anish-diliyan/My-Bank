@@ -12,7 +12,7 @@ import scala.concurrent.ExecutionContext
 
 
 object Main {
-  def main(args: Array[String]): Unit = {
+  def main2(args: Array[String]): Unit = {
     val rootBehaviour: Behavior[NotUsed] = Behaviors.setup{ context =>
       val bank = context.spawn(Bank(), "bank")
       val logger = context.log
